@@ -62,23 +62,24 @@ export default {
     cards: [
       {
         title: "Chemicals",
-        src:
-          "https://images.unsplash.com/photo-1524683745036-b46f52b8505a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2832&q=80",
+        src: "https://i.ibb.co/VMz8kjL/laboratory-test-tubes-2280549.jpg",
         flex: 12
       },
       {
         title: "Manufacturing Gloves",
         src:
-          "https://images.unsplash.com/photo-1524683745036-b46f52b8505a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=958&q=80",
+          "https://i.ibb.co/phvgvxm/person-holding-laboratory-flask-2280571.jpg",
         flex: 6
       },
       {
         title: "Repackaging Services",
         src:
-          "https://images.unsplash.com/photo-1524683745036-b46f52b8505a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=958&q=80",
+          "https://i.ibb.co/zbZBHqD/photo-of-clear-glass-measuring-cup-lot-1366942.jpg",
         flex: 6
       }
     ]
   })
 };
+
+//extra urls for photos
 </script>

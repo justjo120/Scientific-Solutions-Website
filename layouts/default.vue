@@ -23,18 +23,20 @@
     </v-content>
 
     <v-footer :fixed="fixed" app>
-      <div class="text-center">
-        <span>Scientific Solutions LLC &copy; 2019 All Rights Reserved</span>
-        <span>
-          <br />Chemicals |
-          Repackaging Services |
-          Manufacturing Gloves |
-          Chemical Synthesis |
-          <a
-            href="tel:888-608-6689"
-          >888-608-6689</a>
-        </span>
-      </div>
+      <v-container>
+        <div class="text-center">
+          <span>Scientific Solutions LLC &copy; 2019 All Rights Reserved</span>
+          <span>
+            <br />Chemicals |
+            Repackaging Services |
+            Manufacturing Gloves |
+            Chemical Synthesis |
+            <a
+              href="tel:888-608-6689"
+            >888-608-6689</a>
+          </span>
+        </div>
+      </v-container>
     </v-footer>
   </v-app>
 </template>
