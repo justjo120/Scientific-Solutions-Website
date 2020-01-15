@@ -1,5 +1,5 @@
 {
-  "name": "scisolwebsite",
+  "name": "Scientific Solutions LLC",
   "version": "1.0.0",
   "description": "Scientific Solutions LLC Website",
   "author": "Johanna Klay",
@@ -11,9 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0"
+    "@nuxtjs/vuetify": "^1.10.1"
   }
 }
