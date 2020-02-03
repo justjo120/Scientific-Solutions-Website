@@ -12,7 +12,7 @@
     </v-row>
     <v-row justify-end>
       <v-spacer></v-spacer>
-      <v-btn x-large color="info" dark>Request A Quote</v-btn>
+      <ContactForm />
     </v-row>
 
     <v-container class="pa-2" fluid>
@@ -51,11 +51,13 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import VuetifyLogo from "~/components/VuetifyLogo.vue";
+import ContactForm from "~/components/ContactForm.vue";
 
 export default {
   components: {
     Logo,
-    VuetifyLogo
+    VuetifyLogo,
+    ContactForm
   },
   data: () => ({
     overlay: false,
