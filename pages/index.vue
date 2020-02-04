@@ -1,38 +1,51 @@
 <template>
   <v-container>
-    <v-row justify-space-around>
-      <v-spacer />
-      <h1 class="display-2 font-weight-thin mb-4">Scientific Solutions</h1>
-      <v-spacer />
-    </v-row>
-    <v-row justify-space-around>
-      <v-spacer />
-      <h4 class="subheading">Let us be your scientific solution</h4>
-      <v-spacer />
-    </v-row>
-    <v-row justify-end>
+    <v-row>
       <v-spacer></v-spacer>
       <ContactForm />
     </v-row>
 
     <v-container class="pa-2" fluid>
       <v-row>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-card>
-            <v-img
-              :src="card.src"
-              class="white--text"
-              height="200px"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+        <v-col cols="6">
+          <v-card text="center" color="#385F73" dark
+            ><v-icon center>mdi-flask-outline</v-icon>
+            <v-card-title class="headline">Chemicals</v-card-title>
+
+            <v-card-subtitle
+              >For all your Laboratory Solvent needs</v-card-subtitle
             >
-              <v-card-title class="fill-height align-end" v-text="card.title"></v-card-title>
-            </v-img>
 
             <v-card-actions>
-              <div class="flex-grow-1"></div>Expand
-              <v-btn icon>
-                <v-icon>mdi-chevron-down</v-icon>
-              </v-btn>
+              <v-btn text>More</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col cols="6">
+          <v-card text="center" color="#385F73" dark
+            ><v-icon center>mdi-hand</v-icon>
+            <v-card-title class="headline">Manufacturing Gloves</v-card-title>
+
+            <v-card-subtitle
+              >Industrial strength manufacturing gloves</v-card-subtitle
+            >
+
+            <v-card-actions>
+              <v-btn text>More</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="6">
+          <v-card text="center" color="#385F73" dark
+            ><v-icon center>mdi-cube-outline</v-icon>
+            <v-card-title class="headline">Repackaging Services</v-card-title>
+
+            <v-card-subtitle>Custom to your specifications</v-card-subtitle>
+
+            <v-card-actions>
+              <v-btn text>More</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -59,28 +72,7 @@ export default {
     VuetifyLogo,
     ContactForm
   },
-  data: () => ({
-    overlay: false,
-    cards: [
-      {
-        title: "Chemicals",
-        src: "https://i.ibb.co/VMz8kjL/laboratory-test-tubes-2280549.jpg",
-        flex: 12
-      },
-      {
-        title: "Manufacturing Gloves",
-        src:
-          "https://i.ibb.co/phvgvxm/person-holding-laboratory-flask-2280571.jpg",
-        flex: 6
-      },
-      {
-        title: "Repackaging Services",
-        src:
-          "https://i.ibb.co/zbZBHqD/photo-of-clear-glass-measuring-cup-lot-1366942.jpg",
-        flex: 6
-      }
-    ]
-  })
+  data: () => ({})
 };
 
 //extra urls for photos

@@ -1,8 +1,20 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
+    <v-navigation-drawer
+      v-model="drawer"
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      fixed
+      app
+    >
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          router
+          exact
+        >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -24,16 +36,12 @@
 
     <v-footer :fixed="fixed" app>
       <v-container>
-        <div class="text-center">
+        <div class="body-2 text-center">
           <span>Scientific Solutions LLC &copy; 2019 All Rights Reserved</span>
           <span>
-            <br />Chemicals |
-            Repackaging Services |
-            Manufacturing Gloves |
+            <br />Chemicals | Repackaging Services | Manufacturing Gloves |
             Chemical Synthesis |
-            <a
-              href="tel:888-608-6689"
-            >888-608-6689</a>
+            <a href="tel:888-608-6689">888-608-6689</a>
           </span>
         </div>
       </v-container>
@@ -51,7 +59,7 @@ export default {
       items: [
         {
           icon: "mdi-apps",
-          title: "Welcome",
+          title: "Home",
           to: "/"
         },
         {
