@@ -1,39 +1,41 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+    <v-card class="overflow-hidden">
+      <v-app-bar
+        absolute
+        color="primary"
+        dark
+        shrink-on-scroll
+        prominent
+        src="https://i.ibb.co/4JDsJdZ/photo-of-clear-glass-measuring-cup-lot-1366942-1.jpg"
+        fade-img-on-scroll
+        scroll-target="#scrolling-techniques-3"
+      >
+        <template v-slot:img="{ props }">
+          <v-img
+            v-bind="props"
+            gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+          ></v-img>
+        </template>
 
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-    </v-app-bar>
-    <v-content>
-      <nuxt />
-    </v-content>
+        <v-toolbar-title>Scientific Solutions LLC</v-toolbar-title>
 
+        <v-spacer></v-spacer>
+
+        <v-icon>mdi-home</v-icon>
+        <template v-slot:extension>
+          <v-tabs align-with-title>
+            <v-tab>About</v-tab>
+            <v-tab>Blog</v-tab>
+            <v-tab>Request A Quote</v-tab>
+          </v-tabs>
+        </template>
+      </v-app-bar>
+
+      <v-content>
+        <nuxt />
+      </v-content>
+    </v-card>
     <v-footer :fixed="fixed" app>
       <v-container>
         <div class="body-2 text-center">
@@ -52,27 +54,7 @@
 <script>
 export default {
   data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: "mdi-apps",
-          title: "Home",
-          to: "/"
-        },
-        {
-          icon: "mdi-chart-bubble",
-          title: "About",
-          to: "/about"
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: "Scientific Solutions LLC"
-    };
+    return {};
   }
 };
 </script>
