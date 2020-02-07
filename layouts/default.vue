@@ -36,9 +36,14 @@
           </v-tabs>
         </template>
       </v-app-bar>
-      <v-content>
-        <nuxt/>
-      </v-content>
+
+      <v-sheet id="scrolling-techniques-2" class="overflow-y-auto">
+        <v-container style="height: 1000px;">
+          <v-content>
+            <nuxt />
+          </v-content>
+        </v-container>
+      </v-sheet>
     </v-card>
     <v-footer :fixed="fixed" app>
       <v-container>
