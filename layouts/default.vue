@@ -2,12 +2,12 @@
   <v-app>
     <v-card class="overflow-hidden">
       <v-app-bar
-        absolute
+        app
         color="primary"
         dark
         shrink-on-scroll
         prominent
-        src="https://i.ibb.co/4JDsJdZ/photo-of-clear-glass-measuring-cup-lot-1366942-1.jpg"
+        src="/img/clear-glass-flasks.jpg"
         fade-img-on-scroll
         scroll-target="#scrolling-techniques-3"
       >
@@ -20,20 +20,24 @@
 
         <v-toolbar-title>Scientific Solutions LLC</v-toolbar-title>
 
-        <v-spacer></v-spacer>
-
-        <v-icon>mdi-home</v-icon>
         <template v-slot:extension>
-          <v-tabs align-with-title>
-            <v-tab>About</v-tab>
-            <v-tab>Blog</v-tab>
-            <v-tab>Request A Quote</v-tab>
+          <v-tabs
+            align-with-title
+            slider-size="0"
+          >
+            <v-tab v-for="(item, index) in tabs"
+            nuxt
+            :key="index"
+            :to="item.route"
+            >
+              {{item.displayName}}
+            </v-tab>
+            <v-spacer></v-spacer>
           </v-tabs>
         </template>
       </v-app-bar>
-
       <v-content>
-        <nuxt />
+        <nuxt/>
       </v-content>
     </v-card>
     <v-footer :fixed="fixed" app>
@@ -54,7 +58,18 @@
 <script>
 export default {
   data() {
-    return {};
-  }
+    return {
+      tabs: [{
+        displayName: "Home",
+        route: "/",
+      },{
+        displayName: "About",
+        route: "/about",
+      },{
+        displayName: "Blog",
+        route: "/blog",
+      }]
+    };
+  },
 };
 </script>

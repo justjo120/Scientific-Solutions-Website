@@ -17,63 +17,12 @@
       </v-col>
     </v-row>
 
-    <v-row>
-      <ContactForm />
+    <v-row justify="center">
+      <v-btn color="primary" dark @click.stop="openQuoteDialog">Request A Quote</v-btn>
+      <v-dialog v-model="shouldDisplayQuoteDialog" persistent max-width="600px">
+        <ContactForm/>
+      </v-dialog>
     </v-row>
-
-    <!-- <v-container class="pa-2" fluid>
-      <v-row>
-        <v-col cols="6">
-          <v-card text="center" color="#385F73" dark
-            ><v-icon center>mdi-flask-outline</v-icon>
-            <v-card-title class="headline">Chemicals</v-card-title>
-
-            <v-card-subtitle
-              >For all your Laboratory Solvent needs</v-card-subtitle
-            >
-
-            <v-card-actions>
-              <v-btn text>More</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="6">
-          <v-card text="center" color="#385F73" dark
-            ><v-icon center>mdi-hand</v-icon>
-            <v-card-title class="headline">Manufacturing Gloves</v-card-title>
-
-            <v-card-subtitle
-              >Industrial strength manufacturing gloves</v-card-subtitle
-            >
-
-            <v-card-actions>
-              <v-btn text>More</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="6">
-          <v-card text="center" color="#385F73" dark
-            ><v-icon center>mdi-cube-outline</v-icon>
-            <v-card-title class="headline">Repackaging Services</v-card-title>
-
-            <v-card-subtitle>Custom to your specifications</v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn text>More</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-container>
-      <v-layout>
-        <v-flex>
-          <v-row></v-row>
-        </v-flex>
-      </v-layout>
-    </v-container> -->
   </v-container>
 </template>
 
@@ -139,6 +88,16 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    shouldDisplayQuoteDialog() {
+      return this.$store.state.quote.isDisplayEnabled;
+    }
+  },
+  methods: {
+    openQuoteDialog() {
+      this.$store.commit('quote/setDisplay', true);
+    }
   }
 };
 
