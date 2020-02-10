@@ -45,7 +45,7 @@
         </v-container>
       </v-sheet>
     </v-card>
-    <v-footer app>
+    <v-footer>
       <v-container>
         <div class="body-2 text-center">
           <span>Scientific Solutions LLC &copy; 2019 All Rights Reserved</span>

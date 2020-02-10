@@ -18,9 +18,11 @@
     </v-row>
 
     <v-row justify="center">
-      <v-btn color="primary" dark @click.stop="openQuoteDialog">Request A Quote</v-btn>
+      <v-btn color="primary" dark @click.stop="openQuoteDialog"
+        >Request A Quote</v-btn
+      >
       <v-dialog v-model="shouldDisplayQuoteDialog" persistent max-width="600px">
-        <ContactForm/>
+        <ContactForm />
       </v-dialog>
     </v-row>
   </v-container>
@@ -96,10 +98,8 @@ export default {
   },
   methods: {
     openQuoteDialog() {
-      this.$store.commit('quote/setDisplay', true);
+      this.$store.commit("quote/setDisplay", true);
     }
   }
 };
-
-//extra urls for photos
 </script>
