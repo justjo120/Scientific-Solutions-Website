@@ -3,7 +3,7 @@
     <v-card-title>{{post.title}}</v-card-title>
     <v-card-text>{{post.content}}</v-card-text>
     <v-card-actions>
-      <v-btn to="/">Go Home</v-btn>
+      <v-btn to="/blog">Go Back</v-btn>
     </v-card-actions>
   </v-card>
 </template>

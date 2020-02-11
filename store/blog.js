@@ -6,7 +6,9 @@ export const state = () => ({
 
 export const mutations = {
   updatePosts(state, posts) {
-    state.posts = posts;
+    if (state.posts.length === 0) {
+      state.posts = posts;
+    }
   }
 }
 
