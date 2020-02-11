@@ -103,3 +103,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.ss_background {
+  background-color: $ss_blank;
+}
+</style>
