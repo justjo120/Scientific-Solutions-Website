@@ -23,6 +23,5 @@ export default {
 <style lang="scss" scoped>
 .ss_card {
   background: linear-gradient(145deg, $ss_secondary, $ss_primary);
-  box-shadow: -14px -14px 81px #02253b, 14px 14px 81px $ss_primary;
 }
 </style>
