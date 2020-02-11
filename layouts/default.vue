@@ -4,7 +4,7 @@
       <v-app-bar
         app
         absolute
-        color="primary"
+        color="black"
         dark
         shrink-on-scroll
         prominent
