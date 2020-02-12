@@ -3,7 +3,7 @@
     <v-layout class="text-center">
       <v-flex>
         <p />
-        <div class="display-1">About Us</div>
+        <div class="display-2">About Us</div>
         <v-img
           src="https://i.ibb.co/7p0SHP9/alga-algae-analysis-background-2280548.jpg"
           aspect-ratio="1.5"
