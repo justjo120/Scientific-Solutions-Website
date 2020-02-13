@@ -6,11 +6,11 @@
         <div class="display-2">About Us</div>
         <v-img
           src="https://i.ibb.co/7p0SHP9/alga-algae-analysis-background-2280548.jpg"
+          alt="a cliboard and other materials found in a lab"
           aspect-ratio="1.5"
           contain
         ></v-img>
-        <p />
-        Here at Scientific Solutions, we bring experienced, innovative solutions
+        <p />Here at Scientific Solutions, we bring experienced, innovative solutions
         consistently exceed our customers expectations. If you’re ready for a
         superior chemical purchasing experience, request a quote today.
         <v-flex>
@@ -29,8 +29,9 @@
               alt="St-Jude-emblem"
               aspect-ratio="1.5"
               contain
-            ></v-img></v-row
-        ></v-flex>
+            ></v-img>
+          </v-row>
+        </v-flex>
         <div class="title">Meet Us At a Future Conference!</div>
         <p />
         <v-img
