@@ -17,12 +17,6 @@ export const getters = {
     return (id) => {
       const existing_post = state.posts.find((post) => {
         const result = `${post.id}` === `${id}`;
-        console.log({
-          post,
-          pid: post.id,
-          id,
-        });
-
         return result;
       });
       return existing_post;
