@@ -11,13 +11,19 @@
     <v-card-text v-if="text">{{ text }}</v-card-text>
     <v-card-actions v-if="action.text">
       <v-spacer></v-spacer>
-      <v-btn text> {{ action.text }} </v-btn>
+      <ServiceItemDialog :title="title" :action="action" :dialogText="dialogText"/>
     </v-card-actions>
   </v-card>
 </template>
+
 <script>
+import ServiceItemDialog from '~/components/Services/ServiceItemDialog.vue';
+
 export default {
-  props: ["title", "subtitle", "text", "icon", "action"]
+  components: {
+    ServiceItemDialog,
+  },
+  props: ["title", "subtitle", "text", "icon", "action", "description", "dialogText"]
 };
 </script>
 <style lang="scss" scoped>

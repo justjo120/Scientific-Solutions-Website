@@ -13,6 +13,7 @@
           :icon="item.icon"
           :order="item.order"
           :action="item.action"
+          :dialogText="item.dialogText"
         />
       </v-col>
     </v-row>
@@ -32,7 +33,7 @@
 import Logo from "~/components/Logo.vue";
 import VuetifyLogo from "~/components/VuetifyLogo.vue";
 import ContactForm from "~/components/ContactForm.vue";
-import ServiceItem from "~/components/ServiceItem";
+import ServiceItem from "~/components/Services/ServiceItem";
 
 export default {
   components: {
@@ -53,7 +54,8 @@ export default {
             text: "More",
             func: ""
           },
-          route: ""
+          route: "",
+          dialogText: "Hello 1",
         },
         {
           order: 1,
@@ -64,7 +66,8 @@ export default {
             text: "More",
             func: ""
           },
-          route: ""
+          route: "",
+          dialogText: "Hello 2",
         },
         {
           order: 2,
@@ -75,7 +78,8 @@ export default {
             text: "More",
             func: ""
           },
-          route: ""
+          route: "",
+          dialogText: "Hello 3",
         },
         {
           order: 3,
@@ -86,7 +90,8 @@ export default {
             text: "MORE",
             func: ""
           },
-          route: ""
+          route: "",
+          dialogText: "Hello 4",
         }
       ]
     };
